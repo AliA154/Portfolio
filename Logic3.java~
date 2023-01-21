@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Logic3 {
+  public static void main (String[] args) {
+    //Declrations
+    Scanner input = new Scanner(System.in);
+    int num;
+    
+    //Ask user stuff
+    System.out.print("Please enter a number from 1 to 10: ");
+    num = input.nextInt();
+    
+    //Do Stuff
+    System.out.println("You entered the number "+num);
+  
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 

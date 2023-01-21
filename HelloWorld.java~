@@ -1,0 +1,8 @@
+//What is a comment? describes the code your writing
+//comments cannot be read by the complier!
+
+public class HelloWorld {
+  public ststic void main(String[] args) {
+    
+  }
+}//ends the class line

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class FindTheMistakes1 {
+  public static void main (String[] args) {
+    Scanner input = new scanner(System.in);
+    
+    String food;
+    int num;
+    
+    System.out.println("There are 10 mistakes, find them all!");
+    System.out.print("What is your favorite food?");
+    String food = input.nextLine();
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  input.close();
+  }//end main
+}//end class 

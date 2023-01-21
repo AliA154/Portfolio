@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+public class Interactive2 {
+  public static void main (String[] args){
+  Scanner input = new Scanner(System.in);  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  }//end main
+}//end class 

@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class ArraysIntro1 {
+  
+  
+  public static void main (String[] args) {
+    //Declarations 
+    Scanner input = new Scanner(System.in);
+    
+    //to declare an array, we put [] next to a variable type
+    String[] cars = {"Honda","Jeep","Toyota","Benz","Nissan"};
+    
+    System.out.println("The number of cars is " + cars.length);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 

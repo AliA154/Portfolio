@@ -1,0 +1,74 @@
+import java.util.*;
+
+public class Caculator1 {
+  public static void main (String[] args) {
+    //Declarations
+    
+    /*
+    int num;
+    
+    System.out.print("Please enter a number: ");
+    num = input.nextInt();
+    
+    if (num % 3 == 0 && num % 2 ==1) {//num % 2 ==1
+     System.out.println("That is a special number!!!"); 
+    }
+    else {
+     System.out.println("That is a BORING number =( "); 
+    }
+    
+    TASK: Create a 4 function calculator... + - x /
+    The code will display a GUI for the user.
+    1. addiition
+    2. subtracion
+    3. multiplication
+    4. division
+    The user will enter thier choice, enter thier numbers, it will show all work and the soultion
+    
+    */
+    Scanner input = new Scanner(System.in);
+    int num1, num2, choice;
+    
+    System.out.println("Welcome to Lebo's Calculator of Awesomeness");
+    System.out.println("Please enter one of the following choices: ");
+    System.out.println("1. Addition");
+    System.out.println("2. Subtraction");
+    System.out.println("3. Multiplication");
+    System.out.println("4. Division");
+    System.out.print("Enter your choice here: ");
+    choice = input.nextInt();
+    
+    if (choice <= 4 && choice >=1) {
+     System.out.print("Enter the first number: ");
+     num1 = input.nextInt();
+     System.out.print("Enter the second number: ");
+     num2 = input.nextInt();
+     if (choice == 1) {
+       System.out.println(num1+" + "+num2+" = "+ (num1+num2));
+     }
+     else if (choice == 2) {
+       System.out.println(num1+" - "+num2+" = "+ (num1-num2));
+     }
+     else if (choice == 3) {
+       System.out.println(num1+" x "+num2+" = "+ (num1*num2));
+     }
+     else if (choice == 4) {
+       System.out.println(num1+" / "+num2+" = "+ ((double)num1/num2));
+     }
+    }
+    else {
+     System.out.println("<<ERROR ERROR ERROR ERROR ERROR YOU GONE GOFFED AND PUT A BAD CHOICE IN>> TRY AGAIN LATER");
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class

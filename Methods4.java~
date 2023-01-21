@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Methods4 {
+  //****************** METHODS AREA ***********************
+  
+  //****************** END METHODS AREA *******************
+  public static void main (String[] args) {
+    //Declarations
+    Scanner input = new Scanner(System.in);
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class

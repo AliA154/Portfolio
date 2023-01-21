@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class Caculator1 {
+  public static void main (String[] args) {
+    //Declarations
+    
+    /*
+    int num;
+    
+    System.out.print("Please enter a number: ");
+    num = input.nextInt();
+    
+    if (num % 3 == 0 && num % 2 ==1) {//num % 2 ==1
+     System.out.println("That is a special number!!!"); 
+    }
+    else {
+     System.out.println("That is a BORING number =( "); 
+    }
+    
+    TASK: Create a 4 function calculator... + - x /
+    The code will display a GUI for the user.
+    1. addiition
+    2. subtracion
+    3. multiplication
+    4. division
+    The user will enter thier choice, enter thier numbers, it will show all work and the soultion
+    
+    */
+    Scanner input = new Scanner(System.in);
+    int num1, num2, choice;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Interactive3 {
+  public static void main (Strings [] args) {
+   Scanner input = new Scanner(System.in);
+   
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  }//end main
+}//end class 

@@ -1,0 +1,29 @@
+public class ForLoops1 {
+  public static void main (String[] args) {
+    
+    
+    //When code is repatitive, we try to make the computer do the task automatically
+    //We want the computer to loop through the task and complete the goal.
+    // LOOP => Repititon controlled structure.
+    
+    for (int i = 1 ; i <= 5 ; i++) {
+      System.out.pritnln("Hello");
+    }//end for loop
+    
+    /* How does a for loop work?
+        
+        for ( START ; STOP ; INTERVAL) {
+            TASK
+        }
+      
+    */ 
+    
+  
+  
+  
+  
+  
+  
+  
+  }//end main
+}//end class

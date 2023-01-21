@@ -1,0 +1,38 @@
+public class Methods5 {
+  //****************** METHODS AREA ***********************
+  public static int newNum() {
+    int r = (int)(Math.random() * 20 - 10);//  -10 to 10
+    System.out.println("The number is " + r);
+    return r;
+  }//end newNum()
+  //****************** END METHODS AREA *******************
+  public static void main (String[] args) {
+    
+    int num1 = newNum();
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close()  
+  }//end main
+}//end class 

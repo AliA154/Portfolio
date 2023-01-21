@@ -1,0 +1,26 @@
+public class ForLoops3 {
+  public static void main (String[] args) {
+    //Declarations 
+    Scanner input = new Scanner(System.in); 
+    int stop;
+    
+    
+    
+    
+    System.out.print("what number shall we start at? ");
+    stop = input.nextInt();
+    
+    for (int i = 1; i <= stop ; i++) {
+     System.out.println(i); 
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }//end main
+}//end class

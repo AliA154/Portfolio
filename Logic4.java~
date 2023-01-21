@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Logic4 {
+  public static void main (String[] args) {
+    //Declrations
+    Scanner input = new Scanner(System.in);
+    int num1, num2;
+    
+    //Ask User Stuff
+    System.out.print("Player 1, please enter your secret number: ");
+    num1 = input.nextInt();
+    
+    System.out.println("Player 2, please try to guess the secret number: ");
+    System.out.print("Enter guess here! ");
+    num2 = input.nextInt();
+    
+    //Do Stuff
+    if (num1 == num2) {
+      System.out.println("You guessed the number CORRECT!!");
+     }
+    else {
+     System.out.println("WRONG... the secret number was "+num1); 
+    }
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class

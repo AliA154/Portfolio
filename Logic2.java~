@@ -1,0 +1,18 @@
+import java.util.*; 
+
+public class Logic2 {
+  public static void main (String[] args) {
+    //Declrations
+    Scanner input = new Scanner(System.in);
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 

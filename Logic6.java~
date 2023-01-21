@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Logic6 {
+  public static void main (String[] args) {
+    //Declrations
+    Scanner input = new Scanner(System.in);
+    int temp;
+    String weather;
+    
+    
+    //Ask the USer stuff 
+    System.out.print("what is the local temperature?");
+    temp = input.nextInt();
+    System.out.println("Which of the following represetns your local weather condtitons? ");
+    System.out.print("Please enter: sunny, cloudy, or rainy");
+    weather = input.next();
+    
+    //Do Stuff
+    if (!weather.equals("sunny")) {
+      System.out.println("Bad Word");
+    }
+    else {
+      System.out.println("Nice Job Buckaroo! ");
+    }
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 

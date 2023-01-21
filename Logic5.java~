@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Logic5 {
+  public static void main (String[] args) {
+    //Declrations
+    Scanner input = new Scanner(System.in);
+    String word, word2;
+    int len;
+    
+    System.out.print("Player 1, please enter your word: ");
+    word = input.nextLine();
+    
+    System.out.println("Player 2, please try to guess the secret word: ");
+    System.out.print("Enter guess here! ");
+    word2 = input.nextLine();
+    
+    
+  
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 

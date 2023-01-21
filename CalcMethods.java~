@@ -1,0 +1,191 @@
+import java.util.*;
+
+public class CalcMethods {
+  //**************** METHOD AREA *******************
+  public static void greeting() {
+    System.out.println("Welcome to Lebo's Calculator of awesomeness.");
+  }//end greeting
+  
+  public static void menu(){
+    System.out.println("The following are operations that you can use: ");
+    System.out.println("1 - Addition");
+    System.out.println("2 - Subtraction");
+    System.out.println("3 - Multiplication");
+    System.out.println("4 - Division");
+    System.out.println("5 - Square");
+    System.out.println("6 - SqRoot");
+    System.out.println("7 - Slope");
+    System.out.println("8 - Law of Cosines");
+    System.out.println("0 - Exit");
+  }//end menu
+  
+  public static int inputNum(){
+    Scanner input = new Scanner(System.in);
+    System.out.print("Please enter a number: ");
+    int num = input.nextInt();
+    input.close();//if using repl.it.. dont write this line. 
+    return num;
+  }//end inputNum
+  
+  public static String inputWord(){
+    Scanner input = new Scanner(System.in);
+    
+    String word = input.next();
+    input.close();//if using repl.it.. dont write this line. 
+    return word;
+  }//end inputWord
+  
+  public static void prtSol(String word, int num){
+    System.out.println("The "+ word + " is equal to " + num);
+  }
+  public static void prtSol(String word, double num){
+    System.out.println("The "+ word + " is equal to " + num);
+  }
+  public static void adding(){
+    info("adding",2);
+    int num1 = inputNum();
+    int num2 = inputNum();
+    int sum = num1 + num2;
+    prtSol("sum", sum);
+    
+  }//end adding
+   public static void subtract(){
+     info("subtracting",2);
+    int num1 = inputNum();
+    int num2 = inputNum();
+    int diff = num1 - num2;
+    prtSol("difference", diff);
+    
+  }//end subtract
+   public static void multiply(){
+     info("multiplying",2);
+    int num1 = inputNum();
+    int num2 = inputNum();
+    int prod = num1 * num2;
+    prtSol("product", prod);
+    
+  }//end multiply
+   public static void divide(){
+     info("dividing",2);
+    double num1 = inputNum();
+    int num2 = inputNum();
+    double quot = num1 / num2;
+    if (num2==0) {
+      System.out.println("ERROR, you cannot divide by 0.");
+    }//end if 
+    else {
+    prtSol("quotient", quot);
+    }
+  }//end divide
+   public static void square(){
+     info("squaring",1);
+    int num1 = inputNum();
+    
+    int sq = num1 * num1;
+    prtSol("square", sq);
+    
+  }//end square
+   public static void sqRoot(){
+     info("square rooting",1);
+    int num1 = inputNum();
+    
+    double sq = Math.sqrt(num1);
+    if (num1 < 0) {
+      System.out.println("The square root of "+num1+" is not a real number.");
+    }
+    else {
+      prtSol("square root", sq);
+    }
+  }//end sqRoot
+   
+   public static void slope(){
+     info("slope",4);// (y1 - y2)/(x1 - x2)
+     double x1,x2,y1,y2;
+     System.out.print("y1 -> ");y1 = inputNum();
+     System.out.print("y2 -> ");y2 = inputNum();
+     System.out.print("x1 -> ");x1 = inputNum();
+     System.out.print("x2 -> ");x2 = inputNum();
+     double slope = (y1 - y2)/(x1 - x2);
+     if (x1 - x2 == 0) {
+      System.out.println("The slope is undefined. "); 
+     }//end if statment
+     else {
+       prtSol("slope", slope);
+     }
+   }//end slop
+   public static void lawCos() {
+     //C = sqrt(a^2 + b^2 - 2abCos(c))
+     info("Law of Cosines", 3);
+     double a, b, c;
+     System.out.print("Side a ->");a = inputNum();
+     System.out.print("Side b ->");b = inputNum();
+     System.out.print("Angle c ->");c = inputNum();
+     c = Math.toRadians(c);
+     double discr = a*a + b*b - 2*a*b*Math.cos(c);
+     double ans = Math.sqrt(discr);
+     prtSol("Law of Cosine", ans);
+   }//end lawCos
+   public static String userChoose(){
+     System.out.print("Please select the operation you would like to use: ");
+     String choice = inputWord();
+     return choice;
+   }//end useerChoose
+   public static void payload(String ans){
+     if (ans.equals("1") || (ans.length() > 2 && ans.toLowerCase().substring(0,3).equals("add") ) ) {
+       adding();
+     }//end adding
+     else if (ans.equals("2") ||(ans.length() > 3 && ans.toLowerCase().substring(0,4).equals("subt") ) ) {
+       subtract();
+     }//end subtract
+     else if (ans.equals("3") ||(ans.length() > 3 && ans.toLowerCase().substring(0,4).equals("mult") ) ) {
+       multiply();
+     }//end multiply
+     else if (ans.equals("7") ||(ans.length() > 3 && ans.toLowerCase().substring(0,4).equals("slop") ) ) {
+       slope();
+     }//end slope
+     else if (ans.equals("8") ||(ans.length() > 3 && ans.toLowerCase().substring(0,4).equals("slop") ) ) {
+       calcExit();
+     }//end law
+     else if (ans.equals("0") ||(ans.length() > 3 && ans.toLowerCase().substring(0,4).equals("slop") ) ) {
+       calcExit();
+     }//end exit
+     
+   }//end payload
+   
+   public static void info(String oper, int amt){
+     System.out.println("For "+oper+" you will need to enter "+amt+" numbers.");
+   }//end info
+   public static void calcExit() {
+     System.exit(1);
+   }//end calcExit()
+  //***************END METHOD AREA *****************
+  public static void main(String[] args){
+    
+    greeting();
+    
+    while(true) {
+      menu();
+      String ans = userChoose();
+      payload(ans);
+    }
+    /*
+    adding();
+    subtract();
+    multiply();
+    divide();
+    square();
+    sqRoot();
+    //Create square() and sqRoot() 
+    //Create multiply()  and divide();
+    
+    //System.out.println(sum);
+    //Create a method called adding()
+    
+     need parameters. 2 numbers
+     user input
+     sum the numbers
+     
+     */
+    
+  }//end main
+}//end class

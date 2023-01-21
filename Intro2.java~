@@ -1,0 +1,14 @@
+public class Intro2 {
+  public static void main(String[] args){
+    // Q"yz89"\Ja4\\"tp 
+    System.out.println("Q"yz89"\ja4\\"tp"); 
+                         
+    //ESACPE SEQUENCES 
+    //1) \" --> print a "
+    //2) \n --> go to a new line 
+    //3) \t --> tab the cursor over 
+    //4) \\ --> prints a \
+    
+    
+  }//end main
+}//end class

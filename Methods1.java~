@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Methods1 {
+  //****************** METHODS AREA ***********************
+  public static void prtStars() {
+    //System.out.println("*********");
+    for (int i = 1 ;i <= 42; i++;) {
+      System.out.print("*");
+    }
+    System.out.println();
+  }//end prtStars
+  //****************** END METHODS AREA *******************
+  public static void main (String[] args) {
+    //Declarations
+    Scanner input = new Scanner(System.in);
+    /* Defintion of a method?
+     * A Mehtod is a block of a code which only runs when its CALLED.
+       You can pass data known as parameters, into a method. Methods
+       are used to perfom certain actions.
+       Methods live outside the main of our codes.
+    */ 
+    
+    prtStars(); //We called our method
+    System.out.println("Java");
+    prtStars();
+    System.out.println("is");
+    prtStars();
+    System.out.println("easy");
+    prtStars();
+  
+  }//end main
+}//end class

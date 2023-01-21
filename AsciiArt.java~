@@ -1,0 +1,24 @@
+public class AsciiArt {
+  public static void main(String[] args) {
+  System.out.print("\t\t\t_____________________________");  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+  
+  
+  
+  
+  
+ }//end main
+}//end class 

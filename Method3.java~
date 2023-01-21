@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Method3 {
+  //****************** METHODS AREA ***********************
+  
+  //****************** END METHODS AREA *******************
+  public static void main (String[] args) {
+    //Declarations
+    Scanner input = new Scanner(System.in);
+       
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class
